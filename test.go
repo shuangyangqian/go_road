@@ -2,27 +2,33 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
+func main() {
 
+	var m map[string]int
 
-const = (
-	a = 1
-	b = "qianshuangyang"
-	c
-	d = "nihao"
-	e
-)
-fmt.Println(a, b, c, d, e)	
+	m = make(map[string]int)
+	m["sqian"] = 12
+	m["sqians"] = 123
+	fmt.Println(m)
 
-func my_float() {
-	for x := 0; x < 100; x++ {
-		fmt.Printf("x = %d e^x = %8.3f\n", x, math.Exp(float64(x)))
-	}
-}
+	// ages := map[string]int{
+	// 	"alice": 32,
+	// 	"joy":   33,
+	// }
+	// ages := make(map[string]int)
+	// ages["alice"] = 21
+	// ages["joy"] = 22
+	// delete(ages, "joy")
+	// for name, age := range ages {
+	// 	fmt.Printf("%s\t%d\n", name, age)
+	// }
 
-func my_uint() {
-	var u uint8 = 255
-	fmt.Println(u, u+1, u*u)	
+	// a := [...]int{99: -1}
+	// fmt.Println(a[0])
+	// fmt.Println(len(a))
+	// for i, v := range a {
+	// 	fmt.Printf("%d %d\n", i, v)
+	//}
 }
